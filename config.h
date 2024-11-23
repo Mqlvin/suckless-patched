@@ -103,9 +103,11 @@ static const Key keys[] = {
 	{ MODKEY|ShiftMask,             XK_q,      quit,           {0} },
 
 	/* gaps between windows (@fullgaps) */
-    // { MODKEY,                       XK_minus,  setgaps,        {.i = -1 } },
-    // { MODKEY,                       XK_equal,  setgaps,        {.i = +1 } },
-    // { MODKEY|ShiftMask,             XK_equal,  setgaps,        {.i = 0  } },
+       { MODKEY,                       XK_minus,  setgaps,        {.i = +4 } },
+       { MODKEY,                       XK_equal,  setgaps,        {.i = -4 } },
+       { MODKEY|ShiftMask,             XK_equal,  setgaps,        {.i = 0  } },
+       { MODKEY|ControlMask,           XK_minus,  setgaps,        {.i = 100  } },
+       { MODKEY|ControlMask,           XK_equal,  setgaps,        {.i = gappx  } },
 };
 
 /* button definitions */

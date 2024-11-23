@@ -1517,7 +1517,9 @@ setgaps(const Arg *arg)
 {
 	if ((arg->i == 0) || (selmon->gappx + arg->i < 0))
 		selmon->gappx = 0;
-	else
+    else if (arg->i > 6) // if the i value is bigger than 6, we just set the value.
+        selmon->gappx = arg->i;
+	else // otherwise we increment by the value
 		selmon->gappx += arg->i;
 	arrange(selmon);
 }
