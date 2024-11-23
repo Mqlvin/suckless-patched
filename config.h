@@ -7,7 +7,7 @@ static const int vertpad            = 12;       /* vertical padding of bar (@bar
 static const int sidepad            = 12;       /* horizontal padding of bar (@barpadding) */
 static const int user_bh            = 24;        /* 0 means that dwm will calculate bar height, >= 1 means dwm will user_bh as bar height (@barheight) */
 static const unsigned int snap      = 32;       /* snap pixel */
-static const int showbar            = 1;        /* 0 means no bar */
+static const int showbar            = 0;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
 static const char *fonts[]          = { "CaskaydiaCove Nerd Font Mono:size=10" };
 static const char dmenufont[]       = "CaskaydiaCove Nerd Font Mono:size=10";
