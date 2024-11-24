@@ -108,8 +108,8 @@ static const Key keys[] = {
        { MODKEY,                       XK_minus,  setgaps,        {.i = +4 } },
        { MODKEY,                       XK_equal,  setgaps,        {.i = -4 } },
        { MODKEY|ShiftMask,             XK_equal,  setgaps,        {.i = 0  } },
-       { MODKEY|ControlMask,           XK_minus,  setgaps,        {.i = big_gappx  } },
-       { MODKEY|ControlMask,           XK_equal,  setgaps,        {.i = small_gappx  } },
+       { MODKEY|ControlMask,           XK_minus,  setgaps,        {.i = small_gappx  } },
+       { MODKEY|ControlMask,           XK_equal,  setgaps,        {.i = big_gappx  } },
 };
 
 /* button definitions */
