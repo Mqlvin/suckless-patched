@@ -2,7 +2,9 @@
 
 /* appearance */
 static const unsigned int borderpx  = 0;        /* border pixel of windows */
-static const unsigned int gappx     = 12;        /* gaps between windows (@fullgaps) */
+static const unsigned int big_gappx     = 12;        /* gaps between windows (@fullgaps) */
+static const unsigned int small_gappx     = 100;        /* gaps between windows (@fullgaps) */
+static const unsigned int gappx     = small_gappx;        /* gaps between windows (@fullgaps) */
 static const int vertpad            = 12;       /* vertical padding of bar (@barpadding) */
 static const int sidepad            = 12;       /* horizontal padding of bar (@barpadding) */
 static const int user_bh            = 24;        /* 0 means that dwm will calculate bar height, >= 1 means dwm will user_bh as bar height (@barheight) */
@@ -15,7 +17,7 @@ static const char col_gray1[]       = "#222222";
 static const char col_gray2[]       = "#444444";
 static const char col_gray3[]       = "#bbbbbb";
 static const char col_gray4[]       = "#eeeeee";
-static const char col_cyan[]        = "#41963e";
+static const char col_cyan[]        = "#665c54";
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
 	[SchemeNorm] = { col_gray3, col_gray1, col_gray2 },
@@ -106,8 +108,8 @@ static const Key keys[] = {
        { MODKEY,                       XK_minus,  setgaps,        {.i = +4 } },
        { MODKEY,                       XK_equal,  setgaps,        {.i = -4 } },
        { MODKEY|ShiftMask,             XK_equal,  setgaps,        {.i = 0  } },
-       { MODKEY|ControlMask,           XK_minus,  setgaps,        {.i = 100  } },
-       { MODKEY|ControlMask,           XK_equal,  setgaps,        {.i = gappx  } },
+       { MODKEY|ControlMask,           XK_minus,  setgaps,        {.i = big_gappx  } },
+       { MODKEY|ControlMask,           XK_equal,  setgaps,        {.i = small_gappx  } },
 };
 
 /* button definitions */
